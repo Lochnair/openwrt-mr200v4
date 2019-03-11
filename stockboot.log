@@ -1,0 +1,762 @@
+[04000D0B][04000D08]
+DDR Calibration DQS reg = 00008889
+
+
+U-Boot 1.1.3 (Oct 22 2018 - 11:01:41)
+
+Board: Ralink APSoC DRAM:  64 MB
+relocate_code Pointer at: 83fb4000
+gpiomode1 55154404.
+gpiomode2 05550555.
+######GPIO CTRL 0 for GPIO 0~31 OUTPUT tmp(0x00000030)#####
+######GPIO CTRL 1 for GPIO 32~64 OUTPUT tmp(0x00000f80)#####
+######GPIO CTRL 1 for GPIO 32~64 INPUT tmp(0x00000f80)#####
+flash manufacture id: ef, device id 40 17
+find flash: W25Q64BV
+============================================ 
+Ralink UBoot Version: 4.3.0.0
+-------------------------------------------- 
+ASIC 7628_MP (Port5<->None)
+DRAM component: 512 Mbits DDR, width 16
+DRAM bus: 16 bit
+Total memory: 64 MBytes
+Flash component: SPI Flash
+Date:Oct 22 2018  Time:11:01:41
+============================================ 
+icache: sets:512, ways:4, linesz:32 ,total:65536
+dcache: sets:256, ways:4, linesz:32 ,total:32768 
+
+ ##### The CPU freq = 580 MHZ #### 
+ estimate memory size =64 Mbytes
+RESET MT7628 PHY!!!!!!
+continue to starting system.
+ 0 
+disable switch phyport...
+   
+3: System Boot system code via Flash.(0xbc020000)
+do_bootm:argc=2, addr=0xbc020000
+## Booting image at bc020000 ...
+   Uncompressing Kernel Image ... OK
+No initrd
+## Transferring control to Linux (at address 8000c150) ...
+## Giving linux memsize in MB, 64
+
+Starting kernel ...
+
+怘�������ff�fa�~�~f�`�������怘�怘�f30f�`�
+                                         �`��f��f���Linux version 2.6.36 (tp-link@Sohoidev) (gcc version 4.6.3 (Buildroot 2012.11.1) ) #1 Mon Oct 22 11:05:26 CST 2018
+
+ The CPU feqenuce set to 575 MHz
+
+ MIPS CPU sleep mode enabled.
+CPU revision is: 00019655 (MIPS 24Kc)
+Software DMA cache coherency
+Determined physical RAM map:
+ memory: 04000000 @ 00000000 (usable)
+Initrd not found or empty - disabling initrd
+Zone PFN ranges:
+  Normal   0x00000000 -> 0x00004000
+Movable zone start PFN for each node
+early_node_map[1] active PFN ranges
+    0: 0x00000000 -> 0x00004000
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 16256
+Kernel command line: console=ttyS1,115200 root=/dev/mtdblock2 rootfstype=squashfs init=/sbin/init
+PID hash table entries: 256 (order: -2, 1024 bytes)
+Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+Primary instruction cache 64kB, VIPT, , 4-waylinesize 32 bytes.
+Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+Writing ErrCtl register=00039563
+Readback ErrCtl register=00039563
+Memory: 60868k/65536k available (2917k kernel code, 4668k reserved, 715k data, 184k init, 0k highmem)
+NR_IRQS:128
+console [ttyS1] enabled
+Calibrating delay loop... 386.04 BogoMIPS (lpj=772096)
+pid_max: default: 4096 minimum: 301
+Mount-cache hash table entries: 512
+NET: Registered protocol family 16
+RALINK_GPIOMODE = 55154404 
+RALINK_GPIOMODE = 55144404 
+***** Xtal 40MHz *****
+start PCIe register access
+RALINK_RSTCTRL = 2400000
+RALINK_CLKCFG1 = fdbfffc0
+
+*************** MT7628 PCIe RC mode *************
+PCIE0 enabled
+Port 0 N_FTS = 1b105000
+init_rt2880pci done
+bio: create slab <bio-0> at 0
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+pci 0000:00:00.0: BAR 0: can't assign mem (size 0x80000000)
+pci 0000:00:00.0: BAR 8: assigned [mem 0x20000000-0x201fffff]
+pci 0000:00:00.0: BAR 1: assigned [mem 0x20200000-0x2020ffff]
+pci 0000:00:00.0: BAR 1: set to [mem 0x20200000-0x2020ffff] (PCI address [0x20200000-0x2020ffff]
+pci 0000:01:00.0: BAR 0: assigned [mem 0x20000000-0x200fffff]
+pci 0000:01:00.0: BAR 0: set to [mem 0x20000000-0x200fffff] (PCI address [0x20000000-0x200fffff]
+pci 0000:01:00.1: BAR 0: assigned [mem 0x20100000-0x201fffff]
+pci 0000:01:00.1: BAR 0: set to [mem 0x20100000-0x201fffff] (PCI address [0x20100000-0x201fffff]
+pci 0000:00:00.0: PCI bridge to [bus 01-01]
+pci 0000:00:00.0:   bridge window [io  disabled]
+pci 0000:00:00.0:   bridge window [mem 0x20000000-0x201fffff]
+pci 0000:00:00.0:   bridge window [mem pref disabled]
+BAR0 at slot 0 = 0
+bus=0x0, slot = 0x0
+res[0]->start = 0
+res[0]->end = 0
+res[1]->start = 20200000
+res[1]->end = 2020ffff
+res[2]->start = 0
+res[2]->end = 0
+res[3]->start = 0
+res[3]->end = 0
+res[4]->start = 0
+res[4]->end = 0
+res[5]->start = 0
+res[5]->end = 0
+bus=0x1, slot = 0x0
+res[0]->start = 20000000
+res[0]->end = 200fffff
+res[1]->start = 0
+res[1]->end = 0
+res[2]->start = 0
+res[2]->end = 0
+res[3]->start = 0
+res[3]->end = 0
+res[4]->start = 0
+res[4]->end = 0
+res[5]->start = 0
+res[5]->end = 0
+bus=0x1, slot = 0x0
+res[0]->start = 20100000
+res[0]->end = 201fffff
+res[1]->start = 0
+res[1]->end = 0
+res[2]->start = 0
+res[2]->end = 0
+res[3]->start = 0
+res[3]->end = 0
+res[4]->start = 0
+res[4]->end = 0
+res[5]->start = 0
+res[5]->end = 0
+Switching to clocksource Ralink Systick timer
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+TCP bind hash table entries: 2048 (order: 1, 8192 bytes)
+TCP: Hash tables configured (established 2048 bind 2048)
+TCP reno registered
+NET: Registered protocol family 1
+RT3xxx EHCI/OHCI init.
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+fuse init (API version 7.15)
+msgmni has been set to 118
+io scheduler noop registered
+io scheduler deadline registered (default)
+Ralink gpio driver initialized
+i2cdrv_major = 218
+Serial: 8250/16550 driver, 2 ports, IRQ sharing enabled
+serial8250: ttyS0 at MMIO 0x10000d00 (irq = 21) is a 16550A
+serial8250: ttyS1 at MMIO 0x10000c00 (irq = 20) is a 16550A
+brd: module loaded
+flash manufacture id: ef, device id 40 17
+W25Q64BV(ef 40170000 flash_version = 1) (8192 Kbytes)
+mtd .name = raspi, .size = 0x00800000 (8M) .erasesize = 0x00010000 (64K) .numeraseregions = 0
+Creating 6 MTD partitions on "raspi":
+0x000000000000-0x000000020000 : "boot"
+0x000000020000-0x000000160000 : "kernel"
+0x000000160000-0x0000007d0000 : "rootfs"
+mtd: partition "rootfs" set to be root filesystem
+0x0000007d0000-0x0000007e0000 : "config"
+0x0000007e0000-0x0000007f0000 : "romfile"
+0x0000007f0000-0x000000800000 : "radio"
+Register flash device:flash0
+PPP generic driver version 2.4.2
+PPP MPPE Compression module registered
+NET: Registered protocol family 24
+PPTP driver version 0.8.5
+tun: Universal TUN/TAP device driver, 1.6
+tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+FM_OUT value: u4FmOut = 0(0x00000000)
+FM_OUT value: u4FmOut = 126(0x0000007E)
+FM detection done! loop = 1
+SR calibration value u1SrCalVal = 7
+rt3xxx-ehci rt3xxx-ehci: Ralink EHCI Host Controller
+rt3xxx-ehci rt3xxx-ehci: new USB bus registered, assigned bus number 1
+rt3xxx-ehci rt3xxx-ehci: irq 18, io mem 0x101c0000
+rt3xxx-ehci rt3xxx-ehci: USB 0.0 started, EHCI 1.00
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+rt3xxx-ohci rt3xxx-ohci: RT3xxx OHCI Controller
+rt3xxx-ohci rt3xxx-ohci: new USB bus registered, assigned bus number 2
+rt3xxx-ohci rt3xxx-ohci: irq 18, io mem 0x101c1000
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+Mirror/redirect action on
+u32 classifier
+    Actions configured
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (951 buckets, 3804 max)
+GRE over IPv4 demultiplexor driver
+gre: can't add protocol
+GRE over IPv4 tunneling driver
+ip_tables: (C) 2000-2006 Netfilter Core Team, Type=Linux
+TCP cubic registered
+NET: Registered protocol family 10
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+Ebtables v2.0 registered
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+VFS: Mounted root (squashfs filesystem) readonly on device 31:2.
+Freeing unused kernel memory: 184k freed
+starting pid 35, tty '': '/etc/init.d/rcS'
+cp: can't stat '/etc/SingleSKU_FCC.dat': No such file or directory
+SCSI subsystem initialized
+insmod: can't insert '/lib/modules/kmdir/kernel/drivers/usb/core/usbcore.ko': No such file or directory
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+insmod: can't insert '/lib/modules/kmdir/kernel/drivers/usb/host/ifxusb_host.ko': No such file or directory
+rdm_major = 253
+spiflash_ioctl_read, Read from 0x007ef100 length 0x6, ret 0, retlen 0x6
+Read MAC from flash(0x7EF100) ffffffd8-0d-17-02-40-ffffff9b
+GMAC1_MAC_ADRH -- : 0x0000d80d
+GMAC1_MAC_ADRL -- : 0x1702409b
+Ralink APSoC Ethernet Driver Initilization. v3.1  256 rx/tx descriptors allocated, mtu = 1500!
+spiflash_ioctl_read, Read from 0x007ef100 length 0x6, ret 0, retlen 0x6
+Read MAC from flash(0x7EF100) ffffffd8-0d-17-02-40-ffffff9b
+GMAC1_MAC_ADRH -- : 0x0000d80d
+GMAC1_MAC_ADRL -- : 0x1702409b
+PROC INIT OK!
+usbcore: registered new interface driver cdc_wdm
+usbcore: registered new interface driver qmi_wwan
+usbcore: registered new interface driver usbserial
+USB Serial support registered for generic
+usbcore: registered new interface driver usbserial_generic
+usbserial: USB Serial Driver core
+dns_init
+domain_name:tplinkmodem.net
+L2TP core driver, V2.0
+PPPoL2TP kernel driver, V2.0
+[err] syslogd[main --763] syslogd : syslogd_init
+
+usb 1-1: new high speed USB device using rt3xxx-ehci and address 2
+[zc] qmi_wwan_bind: in
+[zc] change dtr 1
+spiflash_ioctl_read, Read from 0x007ef100 length 0x6, ret 0, retlen 0x6
+Init mac d8-0d-17-02-40-9c
+qmi_wwan: probe of 1-1:1.0 failed with error -22
+usbserial_generic 1-1:1.0: generic converter detected
+usb 1-1: generic converter now attached to ttyUSB0
+[zc] qmi_wwan_bind: in
+[zc] change dtr 1
+spiflash_ioctl_read, Read from 0x007ef100 length 0x6, ret 0, retlen 0x6
+Init mac d8-0d-17-02-40-9c
+qmi_wwan: probe of 1-1:1.1 failed with error -22
+qmi_wwan 1-1:1.2: bogus CDC Union: master=0, slave=0
+qmi_wwan: probe of 1-1:1.2 failed with error -1
+qmi_wwan 1-1:1.3: bogus CDC Union: master=0, slave=0
+qmi_wwan: probe of 1-1:1.3 failed with error -1
+qmi_wwan 1-1:1.4: cdc-wdm0: USB WDM device
+[zc] qmi_wwan_bind: in
+[zc] change dtr 1
+spiflash_ioctl_read, Read from 0x007ef100 length 0x6, ret 0, retlen 0x6
+Init mac d8-0d-17-02-40-9c
+scsi0 : usb-storage 1-1:1.5
+scsi 0:0:0:0: Direct-Access     Linux    File-Stor Gadget 0318 PQ: 0 ANSI: 2
+sd 0:0:0:0: [sda] 130048 512-byte logical blocks: (66.5 MB/63.5 MiB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Assuming drive cache: write through
+sd 0:0:0:0: [sda] Assuming drive cache: write through
+ sda:
+sd 0:0:0:0: [sda] Assuming drive cache: write through
+sd 0:0:0:0: [sda] Attached SCSI removable disk
+linux_qmi_qmux_io_pwr_up_init.c: Unable to open wakelock file = /sys/power/wake_lock, error [2:No such file or directory]
+qmuxd: linux_qmi_read_sysfs_config: couldn't open file /sys/module/f_rmnet/parameters/rmnet_ctl_chqmuxd: linux_qmi_read_sysfs_config: couldn't open /sys/module/rmnet/parameters/rmnet_ctl_chlinux_qmi_qmux_if_configure_port_timeout: failed to open SMD timeout config=/sys/devices/virtual/smdpkt/cdc-wdm0/open_timeout errno [2:No such file or directory]linux_qmi_qmux_if_configure_port_timeout: failed to open SMD timeout config=/sys/devices/virtual/smdpkt/cdc-wdm0/open_timeout errno [2:No such file or directory]qmi_qmux_open_connection: connection is disabled for conn_id=1
+qmuxd: opening connection for conn_id=1 [DATA6_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=2
+qmuxd: opening connection for conn_id=2 [DATA7_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=3
+qmuxd: opening connection for conn_id=3 [DATA8_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=4
+qmuxd: opening connection for conn_id=4 [DATA9_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=5
+qmuxd: opening connection for conn_id=5 [DATA12_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=6
+qmuxd: opening connection for conn_id=6 [DATA13_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=7
+qmuxd: opening connection for conn_id=7 [DATA14_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=9
+qmuxd: opening connection for conn_id=9 [DATA15_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=10
+qmuxd: opening connection for conn_id=10 [DATA16_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=11
+qmuxd: opening connection for conn_id=11 [DATA17_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=21
+qmuxd: opening connection for conn_id=21 [SDIO_DATA1_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=22
+qmuxd: opening connection for conn_id=22 [SDIO_DATA2_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=23
+qmuxd: opening connection for conn_id=23 [SDIO_DATA3_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=24
+qmuxd: opening connection for conn_id=24 [SDIO_DATA4_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=25
+qmuxd: opening connection for conn_id=25 [SDIO_DATA5_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=26
+qmuxd: opening connection for conn_id=26 [SDIO_DATA6_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=27
+qmuxd: opening connection for conn_id=27 [SDIO_DATA7_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=28
+qmuxd: opening connection for conn_id=28 [SDIO_DATA8_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=29
+qmuxd: opening connection for conn_id=29 [MDM_DATA1_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=30
+qmuxd: opening connection for conn_id=30 [MDM_DATA2_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=31
+qmuxd: opening connection for conn_id=31 [MDM_DATA3_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=32
+qmuxd: opening connection for conn_id=32 [MDM_DATA4_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=33
+qmuxd: opening connection for conn_id=33 [MDM_DATA5_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=34
+qmuxd: opening connection for conn_id=34 [MDM_DATA6_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=35
+qmuxd: opening connection for conn_id=35 [MDM_DATA7_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=36
+qmuxd: opening connection for conn_id=36 [MDM_DATA8_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=48
+qmuxd: opening connection for conn_id=48 [SMUX0] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=49
+qmuxd: opening connection for conn_id=49 [MDM2_DATA1_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=50
+qmuxd: opening connection for conn_id=50 [MDM2_DATA2_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=51
+qmuxd: opening connection for conn_id=51 [MDM2_DATA3_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=52
+qmuxd: opening connection for conn_id=52 [MDM2_DATA4_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=53
+qmuxd: opening connection for conn_id=53 [MDM2_DATA5_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=54
+qmuxd: opening connection for conn_id=54 [MDM2_DATA6_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=55
+qmuxd: opening connection for conn_id=55 [MDM2_DATA7_CNTL] failed
+qmi_qmux_open_connection: connection is disabled for conn_id=56
+qmuxd: opening connection for conn_id=56 [MDM2_DATA8_CNTL] failed
+
+Please press Enter to activate this console. qmi_ctl_rx_msg.c Can't find txn info for txn_id = 1
+[ dm_readFile ] 2042:  can not open xml file /var/tmp/pc/reduced_data_model.xml!, about to open file /etc/reduced_data_model.xml
+[ judgeProductName ] 2157:  Device is MR200
+
+[ judgeProductName ] 2190:  Device is MR200v4
+
+[ dm_readFile ] 2042:  can not open xml file /var/tmp/pc/reduced_data_model_MR200V4.xml!, about to open file /etc/reduced_data_model_MR200V4.xml
+spiflash_ioctl_read, Read from 0x007d0000 length 0x10000, ret 0, retlen 0x10000
+spiflash_ioctl_read, Read from 0x007d0000 length 0x7567, ret 0, retlen 0x7567
+spiflash_ioctl_read, Read from 0x007d0000 length 0x10000, ret 0, retlen 0x10000
+spiflash_ioctl_read, Read from 0x007d0000 length 0x7567, ret 0, retlen 0x7567
+[ checkUdiskReady ] 069:  [cos] times:0, mount cmd:mount -t auto /dev/sda /tmp/udisk
+
+FAT: utf8 is not a recommended IO charset for FAT filesystems, filesystem will be case sensitive!
+spiflash_ioctl_read, Read from 0x007ef500 length 0x29, ret 0, retlen 0x29
+17 INFO: src/flospiflash_ioctl_read, Read from 0x007ef100 length 0x6, ret 0, retlen 0x6
+wstat_main.c(18) main(): LTE flospiflash_ioctl_read, Read from 0x007ef200 length 0x4, ret 0, retlen 0x4
+wstat process starts working!
+1spiflash_ioctl_read, Read from 0x00020000 length 0x200, ret 0, retlen 0x200
+7 ERROR: Post evspiflash_ioctl_read, Read from 0x007ef100 length 0x6, ret 0, retlen 0x6
+ent to MOBILE server failed, errno = 2 (No such file or directory).
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+17 ERROR: Client communication with server failed.
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+17 ERROR: src/flowstat_manage.c(73) flowstat_get_wwan_tx_rx_statistics(): Get Rx/Tx flow from qmi failed!
+Raeth v3.1 (Tasklet,SkbRecycle)
+
+phy_tx_ring = 0x036ec000, tx_ring = 0xa36ec000
+
+phy_rx_ring0 = 0x036ed000, rx_ring0 = 0xa36ed000
+[fe_sw_init:4952]rt305x_esw_init.
+disable switch phyport...
+GMAC1_MAC_ADRH -- : 0x0000d80d
+GMAC1_MAC_ADRL -- : 0x1702409b
+RT305x_ESW: Link Status Changed
+18 ERROR: Post event to MOBILE server failed, erspiflash_ioctl_read, Read from 0x007ef600 length 0xf, ret 0, retlen 0xf
+rno = 2 (No such file or directory).
+18 ERROR: Client communication with server failed.
+18 ERROR: Post event to MOBILE server failed, errno = 2 (No such file or directory).
+18 ERROR: Client communication with server failed.
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+Query new SMS count success.18 ERROR: New sms count is 0
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+18 USER: Mobile device manager (qmi) initialized OK.
+Init QMI services......
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+19 USER: Start get voice service object.
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+19 USER: VOICE Service Object got.
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+19 USER: VOICE QMI Client Init successfully, handle is 0x004A7C48.
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+19 USER: Mobile device manager (qmi) initialized OK.
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+21 USER: Not registered, searching!
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+1451606421 ERROR: 0x00000034 QMI_ERR_DEVICE_NOT_READY
+1451606421 ERROR: Failed to get smsc address (0).
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+[err] syslogd[syslogd_msg_process --652] syslogd : log module is not config
+
+spiflash_ioctl_read, Read from 0x007ef600 length 0xf, ret 0, retlen 0xf
+sendto /var/tmp/7 msg 2001 error No such file or directory ,pid 106
+[ oal_sys_getOldTZInfo ] 732:  Open TZ file error!
+Fri Jan  1 01:00:21 UTC 2016
+sh: can't create /proc/tplink/eth_vlan: nonexistent directory
+ioctl: No such device
+Fri Jan  1 01:00:21 UTC 2016
+brctl: bridge br0: Invalid argument
+set if eth0.2 to *not wan dev
+device eth0.2 entered promiscuous mode
+device eth0 entered promiscuous mode
+br0: port 1(eth0.2) entering forwarding state
+br0: port 1(eth0.2) entering forwarding state
+set if eth0.3 to *not wan dev
+device eth0.3 entered promiscuous mode
+br0: port 2(eth0.3) entering forwarding state
+br0: port 2(eth0.3) entering forwarding state
+set if eth0.4 to *not wan dev
+device eth0.4 entered promiscuous mode
+br0: port 3(eth0.4) entering forwarding state
+br0: port 3(eth0.4) entering forwarding state
+set if eth0.5 to *not wan dev
+device eth0.5 entered promiscuous mode
+br0: port 4(eth0.5) entering forwarding state
+br0: port 4(eth0.5) entering forwarding state
+set if eth0.5 to wan dev
+[ vlan_addLanPortsIntoBridge ] 512:  add lan Port 255 from br0
+brctl: bridge br0: Device or resource busy
+brctl: bridge br0: Device or resource busy
+brctl: bridge br0: Device or resource busy
+brctl: bridge br0: Device or resource busy
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+ra0       no private ioctls.
+
+
+
+=== pAd = c0c28000, size = 914848 ===
+
+<-- RTMPAllocTxRxRingMemory, Status=0, ErrorValue=0x
+<-- RTMPAllocAdapterBlock, Status=0
+RtmpChipOpsHook(492): Not support for HIF_MT yet!
+mt7628_init()-->
+mt7628_init(FW(8a00), HW(8a01), CHIPID(7628))
+e2.bin mt7628_init(1135)::(2), pChipCap->fw_len(64736)
+mt_bcn_buf_init(218): Not support for HIF_MT yet!
+<--mt7628_init()
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+Interface doesn't accept private ioctl...
+set (8BE2): Network is down
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+[ oal_wlan_ra_lteCoexistence ] 6899:  Get Curr band err 0.
+
+No need to switch channel.
+[ oal_sht:pAd->ApBootFlag = TRUE
+wlan_ra_lteCoexiTX_BCN DESC a2127000 size = 320
+stence ] 6989:  RX[0] DESC a212b000 size = 4096
+
+AutoChannelSkiRX[1] DESC a212e000 size = 2048
+pList = 12;13;52;56;60;64;100;104;108;112;116;120;124;128;132;136;140
+
+cfg_mode=9
+cfg_mode=9
+wmode_band_equal(): Band Equal!
+AndesSendCmdMsg: Could not send in band command due to diable fRTMP_ADAPTER_MCU_SEND_IN_BAND_CMD
+APSDCapable[0]=0
+APSDCapable[1]=0
+APSDCapable[2]=0
+APSDCapable[3]=0
+APSDCapable[4]=0
+APSDCapable[5]=0
+APSDCapable[6]=0
+APSDCapable[7]=0
+APSDCapable[8]=0
+APSDCapable[9]=0
+APSDCapable[10]=0
+APSDCapable[11]=0
+APSDCapable[12]=0
+APSDCapable[13]=0
+APSDCapable[14]=0
+APSDCapable[15]=0
+Key1Str is Invalid key length(0) or Type(0)
+Key1Str is Invalid key length(0) or Type(0)
+Key2Str is Invalid key length(0) or Type(0)
+Key2Str is Invalid key length(0) or Type(0)
+Key3Str is Invalid key length(0) or Type(0)
+Key3Str is Invalid key length(0) or Type(0)
+Key4Str is Invalid key length(0) or Type(0)
+Key4Str is Invalid key length(0) or Type(0)
+WscKeyASCII=8
+WscKeyASCII=8
+load fw image from fw_header_image
+AndesMTLoadFwMethod1(2261)::pChipCap->fw_len(64736)
+FW Version:1
+FW Build Date:20170411104110
+CmdAddressLenReq:(ret = 0)
+CmdFwStartReq: override = 1, address = 1048576
+CmdStartDLRsp: WiFI FW Download Success
+MtAsicDMASchedulerInit(): DMA Scheduler Mode=0(LMAC)
+efuse_probe: efuse = 10000002
+RtmpChipOpsEepromHook::e2p_type=2, inf_Type=4
+RtmpEepromGetDefault::e2p_dafault=2
+RtmpChipOpsEepromHook: E2P type(2), E2pAccessMode = 2, E2P default = 2
+NVM is FLASH mode
+1. Phy Mode = 14
+exec!
+spiflash_ioctl_read, Read from 0x007f0000 length 0x400, ret 0, retlen 0x400
+eeFlashId = 0x7628!
+Country Region from e2p = ffff
+tssi_1_target_pwr_g_band = 30
+2. Phy Mode = 14
+3. Phy Mode = 14
+NICInitPwrPinCfg(11): Not support for HIF_MT yet!
+NICInitializeAsic(651): Not support rtmp_mac_sys_reset () for HIF_MT yet!
+mt_mac_init()-->
+MtAsicInitMac()-->
+mt7628_init_mac_cr()-->
+MtAsicSetMacMaxLen(1277): Set the Max RxPktLen=450!
+<--mt_mac_init()
+	WTBL Segment 1 info:
+		MemBaseAddr/FID:0x28000/0
+		EntrySize/Cnt:32/128
+	WTBL Segment 2 info:
+		MemBaseAddr/FID:0x40000/0
+		EntrySize/Cnt:64/128
+	WTBL Segment 3 info:
+		MemBaseAddr/FID:0x42000/64
+		EntrySize/Cnt:64/128
+	WTBL Segment 4 info:
+		MemBaseAddr/FID:0x44000/128
+		EntrySize/Cnt:32/128
+AntCfgInit(2943): Not support for HIF_MT yet!
+MCS Set = ff ff 00 00 01
+MtAsicSetChBusyStat(861): Not support for HIF_MT yet!
+[PMF]ap_pmf_init:: apidx=0, MFPC=0, MFPR=0, SHA256=0
+[PMF]RTMPMakeRsnIeCap: RSNIE Capability MFPC=0, MFPR=0
+[PMF]ap_pmf_init:: apidx=1, MFPC=0, MFPR=0, SHA256=0
+MtAsicSetRalinkBurstMode(3145): Not support for HIF_MT yet!
+MtAsicSetPiggyBack(796): Not support for HIF_MT yet!
+reload DPD from flash , 0x9F = [c000] doReload bit7[0]
+CmdLoadDPDDataFromFlash: Channel = 2, DoReload = 0
+MtAsicSetTxPreamble(3124): Not support for HIF_MT yet!
+CmdSlotTimeSet:(ret = 0)
+MtAsicAddSharedKeyEntry(1344): Not support for HIF_MT yet!
+The 2-BSSID mode is enabled, the BSSID byte5 MUST be the multiple of 2
+MtAsicSetPreTbtt(): bss_idx=0, PreTBTT timeout = 0xf0
+Main bssid = d8:0d:17:02:40:9b
+<==== rt28xx_init, Status=0
+@@@ ed_monitor_init : ===>
+@@@ ed_monitor_init : <===
+mt7628_set_ed_cca: TURN ON EDCCA mac 0x10618 = 0xd7c87d0f, EDCCA_Status=1
+sht:pAd->ApBootFlag = FALSE
+WiFi Startup Cost (ra0): 3.768s
+Set_ed_chk_proc()::ed_chk=0
+mt7628_set_ed_cca: TURN OFF EDCCA  mac 0x10618 = 0xd7083f0f, EDCCA_Status=0
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634The 2-BSSID mode is enabled, the BSSID byte5 MUST be the multiple of 2
+:  Device is MR200v4
+
+ra0 RTMPInfClose done.
+MtAsicSetPreTbtt(): bss_idx=0, PreTBTT timeout = 0x0
+MtAsicSetPiggyBack(796): Not support for HIF_MT yet!
+tx_kickout_fail_count = 0
+tx_timeout_fail_count = 0
+rx_receive_fail_count = 0
+alloc_cmd_msg = 159
+free_cmd_msg = 159
+device ra0 entered promiscuous mode
+device ra1 entered promiscuous mode
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+WLAN-Start wlNetlinkTool
+Waiting for Wireless Events from interfaces...
+swWlanChkAhbErr: netlink to do
+rai0      no private ioctls.
+
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+spiflash_ioctl_read, Read from 0x007f0000 length 0x10000, ret 0, retlen 0x10000
+read radio success, offset 0x7f8000, size 0x400
+eeFlashId = 0x7610!
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+Interface doesn't accept private ioctl...
+set (8BE2): Network is down
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+load fw spent 16ms
+[ oal_wlan_ra_setWpsUPnP ] 6297:  rai0: cannot open scpd xml file
+
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+0x1300 = 00064300
+Interface doesn't accept private ioctl...
+set (8BE2): Invalid argument
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+spiflash_ioctl_read, Read from 0x007f0000 length 0x10000, ret 0, retlen 0x10000
+read radio success, offset 0x7f8000, size 0x400
+eeFlashId = 0x7610!
+device rai0 entered promiscuous mode
+device rai1 entered promiscuous mode
+wlNetlinkTool is already there. 
+[ util_judgeProductName ] 601:  Device is MR200
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+sendto /var/tmp/8 msg 2030 error No such file or directory ,pid 106
+sendto /var/tmp/8 msg 2030 error No such file or directory ,pid 106
+sendto /var/tmp/8 msg 2030 error No such file or directory ,pid 106
+[src/cloud_downloadHandler.c:cloud_initPthreadDownloadHandler:241] init download handler success!
+
+[src/cloud_downloadHandler.c:downloadHandler:104] Enter download handler, download firmware from cloud...
+
+[src/cloud_downloadHandler.c:downloadHandler:108] wait semaphore to download firmware to device...
+
+mmmInit():Total mem size=51364, addr=0x0x446150.
+*************************************************************
+*************************MMM TABLE DUMP**********************
+-------------------------------------------------------------
+ poolhead(40)  poolnum  dynamictimes  chainhead  poolend     
+-------------------------------------------------------------
+ 0x446150        8          0         (nil)     0x4529f4  
+-------------------------------------------------------------
+ index  poolhead(20)    size    blocks    free     usage  
+-------------------------------------------------------------
+  1     0x446178        32          256       256       0         
+  2     0x448590        64          128       128       0         
+  3     0x44a7a8        128         64        64        0         
+  4     0x44c8c0        256         32        32        0         
+  5     0x44e958        512         8         8         0         
+  6     0x44f990        1024        4         4         0         
+  7     0x4509b8        2048        2         2         0         
+  8     0x4519d8        4096        1         1         0         
+-------------------------------------------------------------
+ index  chainnode(16)   magic    length    prev    next      
+-------------------------------------------------------------
+(nil)
+*************************************************************
+sendto /var/tmp/8 msg 2030 error No such file or directory ,pid 106
+sendto /var/tmp/9 msg 2004 error No such file or directory ,pid 106
+insmod: can't insert '/lib/modules/kmdir/kernel/drivers/net/tun.ko': No such file or directory
+insmod: can't insert '/lib/modules/kmdir/kernel/drivers/net/ppp_mppe.ko': No such file or directory
+lin: oal_WritePptpVpnFile start!
+iptables: Bad rule (does a matching rule exist in that chain?).
+killall: npd6: no process killed
+radvd starting
+iptables: Bad rule (does a matching rule exist in that chain?).
+[rsl_initWanLteIntfCfgObj 3263] init LTE module, set flowstat [enableDataLimit 0, enablePaymentDay 0, paymentDay 1, limitation 0, warningPercent 90]
+[initProfileList 413] LTE Module: profile num [1], default profile [0], active profile [0]
+[initProfileList 415] DM: profile num [1], default profile [0], active profile [0]
+/var/run/dhcp6c_wwan0.pid: No such file or directory
+[ getPidFromPidFile ] 112:  Cann't open file: /var/run/zebra.pid.
+[ getPidFromPidFile ] 112:  Cann't open file: /var/run/ripd.pid.
+iptables: Bad rule (does a matching rule exist in that chain?).
+iptables: Bad rule (does a matching rule exist in that chain?).
+iptables: Bad rule (does a matching rule exist in that chain?).
+[src/cloud_client.c:initSigIntHandler:104] init signal handler success!
+
+[src/cloud_client.c:cloudClientInit:148] Init cloud-client environment successful.
+
+[src/cloud_localMsgHandler.c:cloud_localMsgTask:96] Start cloud local message observer...
+
+nf_nat_rtsp v0.6.21 loading
+iptables: Bad rule (does a matching rule exist in that chain?).
+ip6tables: Bad rule (does a matching rule exist in that chain?).
+ip6tables: Bad rule (does a matching rule exist in that chain?).
+enable switch phyport...] 601:  Device is MR200
+
+
+[ util_judgeProductName ] 634:  Device is MR200v4
+
+Set: phy[0].reg[0] = 3900
+Set: phy[1].reg[0] = 3900
+Set: phy[2].reg[0] = 3900
+Set: phy[3].reg[0] = 3900
+Set: phy[4].reg[0] = 3900
+Set: phy[0].reg[0] = 3300
+Set: phy[1].reg[0] = 3300
+Set: phy[2].reg[0] = 3300
+Set: phy[3].reg[0] = 3300
+Set: phy[4].reg[0] = 3300
+resetMiiPortV over.
+Set: phy[0].reg[4] = 01e1
+Set: phy[0].reg[0] = 3300
+Set: phy[1].reg[4] = 01e1
+Set: phy[1].reg[0] = 3300
+Set: phy[2].reg[4] = 01e1
+Set: phy[2].reg[0] = 3300
+Set: phy[3].reg[4] = 01e1
+Set: phy[3].reg[0] = 3300
+Set: phy[4].reg[4] = 01e1
+Set: phy[4].reg[0] = 3300
+turn off flow control over.

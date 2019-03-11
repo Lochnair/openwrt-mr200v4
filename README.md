@@ -1,5 +1,17 @@
 # MR200v4 support for OpenWrt notes
 
+## MTD
+```
+Creating 6 MTD partitions on "raspi":
+0x000000000000-0x000000020000 : "boot"
+0x000000020000-0x000000160000 : "kernel"
+0x000000160000-0x0000007d0000 : "rootfs"
+mtd: partition "rootfs" set to be root filesystem
+0x0000007d0000-0x0000007e0000 : "config"
+0x0000007e0000-0x0000007f0000 : "romfile"
+0x0000007f0000-0x000000800000 : "radio"
+```
+
 ## Available U-Boot commands
 ```
 MT7628 # help

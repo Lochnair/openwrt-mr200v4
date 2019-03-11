@@ -1,10 +1,10 @@
 # MR200v4 support for OpenWrt notes
 
 ## HW
-Soc: MT7628
-CPU freq: 580 MHZ
-RAM: 64 MB
-Flash: 8 MB W25Q64BV
+* Soc: MT7628
+* CPU freq: 580 MHZ
+* RAM: 64 MB
+* Flash: 8 MB W25Q64BV
 
 
 ## MTD

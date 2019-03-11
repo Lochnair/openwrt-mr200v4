@@ -1,5 +1,12 @@
 # MR200v4 support for OpenWrt notes
 
+## HW
+Soc: MT7628
+CPU freq: 580 MHZ
+RAM: 64 MB
+Flash: 8 MB W25Q64BV
+
+
 ## MTD
 ```
 Creating 6 MTD partitions on "raspi":
@@ -10,6 +17,15 @@ mtd: partition "rootfs" set to be root filesystem
 0x0000007d0000-0x0000007e0000 : "config"
 0x0000007e0000-0x0000007f0000 : "romfile"
 0x0000007f0000-0x000000800000 : "radio"
+```
+
+## GPIO
+```
+gpiomode1 55154404.
+gpiomode2 05550555.
+######GPIO CTRL 0 for GPIO 0~31 OUTPUT tmp(0x00000030)#####
+######GPIO CTRL 1 for GPIO 32~64 OUTPUT tmp(0x00000f80)#####
+######GPIO CTRL 1 for GPIO 32~64 INPUT tmp(0x00000f80)#####
 ```
 
 ## Available U-Boot commands

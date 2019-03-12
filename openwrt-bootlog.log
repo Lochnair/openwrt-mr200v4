@@ -1,0 +1,161 @@
+do_bootm:argc=2, addr=0x82000000
+## Booting image at 82000000 ...
+   Uncompressing Kernel Image ... OK
+No initrd
+## Transferring control to Linux (at address 80000000) ...
+## Giving linux memsize in MB, 64
+
+Starting kernel ...
+
+[    0.000000] Linux version 4.14.105 (nsvee@halyard) (gcc version 7.4.0 (OpenWrt GCC 7.4.0 r9584-5107176861)) #0 Mon Mar 11 22:14:28 2019
+[    0.000000] Board has DDR2
+[    0.000000] Analog PMU set to hw control
+[    0.000000] Digital PMU set to hw control
+[    0.000000] SoC Type: MediaTek MT7628AN ver:1 eco:2
+[    0.000000] bootconsole [early0] enabled
+[    0.000000] CPU0 revision is: 00019655 (MIPS 24KEc)
+[    0.000000] MIPS: machine is TP-Link Archer MR200 V4
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 04000000 @ 00000000 (usable)
+[    0.000000] Initrd not found or empty - disabling initrd
+[    0.000000] Primary instruction cache 64kB, VIPT, 4-way, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000000000000-0x0000000003ffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x0000000003ffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x0000000003ffffff]
+[    0.000000] random: get_random_bytes called from start_kernel+0x8c/0x474 with crng_init=0
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 16256
+[    0.000000] Kernel command line: console=ttyS0,115200 rootfstype=squashfs,jffs2
+[    0.000000] PID hash table entries: 256 (order: -2, 1024 bytes)
+[    0.000000] Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Writing ErrCtl register=00039563
+[    0.000000] Readback ErrCtl register=00039563
+[    0.000000] Memory: 57932K/65536K available (3643K kernel code, 169K rwdata, 844K rodata, 2056K init, 200K bss, 7604K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] NR_IRQS: 256
+[    0.000000] intc: using register map from devicetree
+[    0.000000] CPU Clock: 580MHz
+[    0.000000] timer_probe: no matching timers found
+[    0.000000] clocksource: MIPS: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6590553264 ns
+[    0.000010] sched_clock: 32 bits at 290MHz, resolution 3ns, wraps every 7405115902ns
+[    0.007541] Calibrating delay loop... 385.84 BogoMIPS (lpj=1929216)
+[    0.073489] pid_max: default: 32768 minimum: 301
+[    0.078154] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.084501] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.096296] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.105793] futex hash table entries: 256 (order: -1, 3072 bytes)
+[    0.111728] pinctrl core: initialized pinctrl subsystem
+[    0.117261] NET: Registered protocol family 16
+[    0.123727] rt2880-pinmux pinctrl: invalid group "uartf" for function "gpio"
+[    0.130545] rt2880-pinmux pinctrl: invalid group "rgmii1" for function "gpio"
+[    0.137375] rt2880-pinmux pinctrl: invalid group "rgmii2" for function "gpio"
+[    0.144276] rt2880-pinmux pinctrl: invalid group "wled" for function "gpio"
+[    0.150983] rt2880-pinmux pinctrl: invalid group "nd_sd" for function "gpio"
+[    0.157799] rt2880-pinmux pinctrl: invalid group "ephy" for function "gpio"
+[    0.164507] rt2880-pinmux pinctrl: invalid group "spi refclk" for function "gpio"
+[    0.171744] rt2880-pinmux pinctrl: error claiming hogs: -22
+[    0.177104] rt2880-pinmux pinctrl: could not claim hogs: -22
+[    0.182705] rt2880-pinmux: probe of pinctrl failed with error -22
+[    0.293289] mt7620-pci 10140000.pcie: Port 0 N_FTS = 1b105000
+[    0.448561] PCI host bridge /pcie@10140000 ranges:
+[    0.453140]  MEM 0x0000000020000000..0x000000002fffffff
+[    0.458160]   IO 0x0000000010160000..0x000000001016ffff
+[    0.478481] mt7621_gpio 10000600.gpio: registering 32 gpios
+[    0.484128] mt7621_gpio 10000600.gpio: registering 32 gpios
+[    0.489651] mt7621_gpio 10000600.gpio: registering 32 gpios
+[    0.495782] PCI host bridge to bus 0000:00
+[    0.499687] pci_bus 0000:00: root bus resource [mem 0x20000000-0x2fffffff]
+[    0.506371] pci_bus 0000:00: root bus resource [io  0xffffffff]
+[    0.512027] pci_bus 0000:00: root bus resource [??? 0x00000000 flags 0x0]
+[    0.518594] pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+[    0.526669] pci 0000:00:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+[    0.535463] pci 0000:00:00.0: BAR 0: no space for [mem size 0x80000000]
+[    0.541794] pci 0000:00:00.0: BAR 0: failed to assign [mem size 0x80000000]
+[    0.548569] pci 0000:00:00.0: BAR 8: assigned [mem 0x20000000-0x201fffff]
+[    0.555068] pci 0000:00:00.0: BAR 1: assigned [mem 0x20200000-0x2020ffff]
+[    0.561648] pci 0000:01:00.0: BAR 0: assigned [mem 0x20000000-0x200fffff]
+[    0.568178] pci 0000:01:00.1: BAR 0: assigned [mem 0x20100000-0x201fffff]
+[    0.574748] pci 0000:00:00.0: PCI bridge to [bus 01]
+[    0.579513] pci 0000:00:00.0:   bridge window [mem 0x20000000-0x201fffff]
+[    0.590295] clocksource: Switched to clocksource MIPS
+[    0.596277] NET: Registered protocol family 2
+[    0.601239] TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.607925] TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.614117] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.620399] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.625999] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.632322] NET: Registered protocol family 1
+[    2.600302] random: fast init done
+[    2.994521] Crashlog allocated RAM at address 0x3f00000
+[    3.001073] workingset: timestamp_bits=30 max_order=14 bucket_order=0
+[    3.012535] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    3.018106] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    3.101917] io scheduler noop registered
+[    3.105647] io scheduler deadline registered (default)
+[    3.111430] Serial: 8250/16550 driver, 3 ports, IRQ sharing disabled
+[    3.118301] of_serial 10000c00.uartlite: could not find pctldev for node /pinctrl/uartlite, deferring probe
+[    3.127937] cacheinfo: Failed to find cpu0 device node
+[    3.132854] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    3.139260] spi-mt7621 10000b00.spi: could not find pctldev for node /pinctrl/spi_pins, deferring probe
+[    3.148875] libphy: Fixed MDIO Bus: probed
+[    3.165211] rt3050-esw 10110000.esw: link changed 0x00
+[    3.170994] mtk_soc_eth 10100000.ethernet: generated random MAC address 7e:4b:43:46:fd:f0
+[    3.179492] mtk_soc_eth 10100000.ethernet eth0: mediatek frame engine at 0xb0100000, irq 5
+[    3.189102] NET: Registered protocol family 10
+[    3.197055] Segment Routing with IPv6
+[    3.200694] NET: Registered protocol family 17
+[    3.204968] 8021q: 802.1Q VLAN Support v1.8
+[    3.209722] of_serial 10000c00.uartlite: could not find pctldev for node /pinctrl/uartlite, deferring probe
+[    3.219240] spi-mt7621 10000b00.spi: could not find pctldev for node /pinctrl/spi_pins, deferring probe
+[    3.229451] Warning: unable to open an initial console.
+[    3.245639] Freeing unused kernel memory: 2056K
+[    3.249945] This architecture does not have kernel memory protection.
+[    3.269209] init: Console is alive
+[    3.272868] init: - watchdog -
+[    3.297849] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+[    3.308153] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+[    3.317139] init: - preinit -
+[    3.496590] rt3050-esw 10110000.esw: link changed 0x00
+[    5.683639] procd: - early -
+[    5.686465] procd: - watchdog -
+[    6.225128] procd: - watchdog -
+[    6.228283] procd: failed to set stdio: No such device
+[    6.233326] procd: - ubus -
+[    6.242920] random: ubusd: uninitialized urandom read (4 bytes read)
+[    6.286525] random: ubusd: uninitialized urandom read (4 bytes read)
+[    6.293160] random: ubusd: uninitialized urandom read (4 bytes read)
+[    6.300112] procd: - init -
+[    6.476856] kmodloader: loading kernel modules from /etc/modules.d/*
+[    6.489274] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    6.503009] Loading modules backported from Linux version v4.19.23-0-g67d52fae61c1
+[    6.510265] Backport generated by backports.git v4.19.23-1-0-g480a925a
+[    6.519721] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    6.533245] nf_conntrack version 0.5.0 (1024 buckets, 4096 max)
+[    6.598108] xt_time: kernel timezone is -0000
+[    6.658256] mt76_wmac 10300000.wmac: ASIC revision: 76280001
+[    6.664677] mt76_wmac 10300000.wmac: Invalid MAC address, using random address ce:73:10:51:d4:93
+[    7.246714] rt3050-esw 10110000.esw: link changed 0x02
+[    7.691634] mt76_wmac 10300000.wmac: Firmware Version: 20151201
+[    7.697303] mt76_wmac 10300000.wmac: Build Time: 20151201183641
+[    7.720301] mt76_wmac 10300000.wmac: firmware init done
+[    7.891196] of_serial 10000c00.uartlite: could not find pctldev for node /pinctrl/uartlite, deferring probe
+[    7.900702] spi-mt7621 10000b00.spi: could not find pctldev for node /pinctrl/spi_pins, deferring probe
+[    7.943010] PPP generic driver version 2.4.2
+[    7.954953] NET: Registered protocol family 24
+[    7.973924] kmodloader: done loading kernel modules from /etc/modules.d/*
+[    9.082391] urandom_read: 5 callbacks suppressed
+[    9.082401] random: jshn: uninitialized urandom read (4 bytes read)
+[    9.163092] random: jshn: uninitialized urandom read (4 bytes read)
+[   17.524532] br-lan: port 1(eth0.1) entered blocking state
+[   17.529694] br-lan: port 1(eth0.1) entered disabled state
+[   17.535488] device eth0.1 entered promiscuous mode
+[   17.540057] device eth0 entered promiscuous mode
+[   17.598084] br-lan: port 1(eth0.1) entered blocking state
+[   17.603309] br-lan: port 1(eth0.1) entered forwarding state
+[   17.608837] IPv6: ADDRCONF(NETDEV_UP): br-lan: link is not ready
+[   18.530791] IPv6: ADDRCONF(NETDEV_CHANGE): br-lan: link becomes ready
+[  123.590359] random: crng init done

@@ -16,6 +16,9 @@
 * WLAN 5GHz: ✓
 * LTE Modem: ✕
 
+## UART shell login
+* Username: admin
+* Password: 1234
 
 ## GPL source
 https://static.tp-link.com/resources/gpl/Archer_MR200V4_GPL.tar.gz

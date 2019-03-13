@@ -1,4 +1,5 @@
 # MR200v4 support for OpenWrt notes
+### See the [mr200v4](https://github.com/Lochnair/openwrt/tree/mr200v4) branch on my OpenWrt repo for the code
 
 ## HW
 * Soc: MT7628

@@ -36,13 +36,17 @@ mtd: partition "rootfs" set to be root filesystem
 ```
 
 ## GPIO
-```
-gpiomode1 55154404.
-gpiomode2 05550555.
-######GPIO CTRL 0 for GPIO 0~31 OUTPUT tmp(0x00000030)#####
-######GPIO CTRL 1 for GPIO 32~64 OUTPUT tmp(0x00000f80)#####
-######GPIO CTRL 1 for GPIO 32~64 INPUT tmp(0x00000f80)#####
-```
+|  Name        |  GPIO | Polarity   |
+|--------------|-------|------------|
+| WLAN LED     | 4     | Active low |
+| LAN LED      | 5     | Active low |
+| Reset button | 38    | Active low |
+| Power LED    | 39    | Active low |
+| WAN LED      | 40    | Active low |
+| Signal low   | 41    | Active low |
+| Signal med   | 42    | Active low |
+| Signal high  | 43    | Active low |
+| WLAN button  | 46    | Active low |
 
 ## Available U-Boot commands
 ```

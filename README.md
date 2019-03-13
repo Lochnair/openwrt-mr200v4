@@ -7,6 +7,16 @@
 * Flash: 8 MB W25Q64BV
 * Modem: (?) (based on MDM9207 Soc)
 
+## Status
+* Installation: ✕
+* Buttons: ✕
+* LEDs: ✕
+* Ethernet: ✓
+* WLAN 2.4GHz: ✓
+* WLAN 5GHz: ✓
+* LTE Modem: ✕
+
+
 ## GPL source
 https://static.tp-link.com/resources/gpl/Archer_MR200V4_GPL.tar.gz
 

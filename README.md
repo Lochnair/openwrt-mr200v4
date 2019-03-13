@@ -5,6 +5,7 @@
 * CPU freq: 580 MHZ
 * RAM: 64 MB
 * Flash: 8 MB W25Q64BV
+* Modem: (?) (based on MDM9207 Soc)
 
 ## GPL source
 https://static.tp-link.com/resources/gpl/Archer_MR200V4_GPL.tar.gz

@@ -9,8 +9,8 @@
 
 ## Status
 * Installation: ✕
-* Buttons: ✕
-* LEDs: ✕
+* Buttons: ✓
+* LEDs: ✓
 * Ethernet: ✓
 * WLAN 2.4GHz: ✓
 * WLAN 5GHz: ✓

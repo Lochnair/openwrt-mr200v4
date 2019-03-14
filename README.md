@@ -17,6 +17,13 @@
 * WLAN 5GHz: ✓
 * LTE Modem: ✕
 
+## Installation
+Currently the only tested method of installation is by hooking up UART and booting
+into OpenWrt using TFTP, and flashing OpenWrt by using sysupgrade.
+
+## Revert to stock
+I have not attempted to revert to stock by using TFTP recovery or similar, but I can comfirm that writing a backup of the firmware partition with the `mtd` utility worked.
+
 ## UART shell login
 * Username: admin
 * Password: 1234

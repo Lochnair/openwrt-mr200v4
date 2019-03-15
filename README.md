@@ -21,6 +21,9 @@
 Currently the only tested method of installation is by hooking up UART and booting
 into OpenWrt using TFTP, and flashing OpenWrt by using sysupgrade.
 
+## TFTP recovery
+Haven't tested this. U-boot attempts to load the file 'tp_recovery.bin' from 192.168.0.225.
+
 ## Revert to stock
 I have not attempted to revert to stock by using TFTP recovery or similar, but I can comfirm that writing a backup of the firmware partition with the `mtd` utility worked.
 

@@ -23,6 +23,14 @@ into OpenWrt using TFTP, and flashing OpenWrt by using sysupgrade.
 
 ## TFTP recovery
 Haven't tested this. U-boot attempts to load the file 'tp_recovery.bin' from 192.168.0.225.
+U-Boot runs the following commands upon reset:
+```
+set serverip 192.168.0.225
+tftp 0x80060000 tp_recovery.bin
+erase tplink 0x20000 0x7a0000
+cp.b 0x80080000 0x20000 0x7a0000
+reset
+```
 
 ## Revert to stock
 I have not attempted to revert to stock by using TFTP recovery or similar, but I can comfirm that writing a backup of the firmware partition with the `mtd` utility worked.

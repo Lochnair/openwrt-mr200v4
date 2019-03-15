@@ -24,6 +24,9 @@ into OpenWrt using TFTP, and flashing OpenWrt by using sysupgrade.
 ## Revert to stock
 I have not attempted to revert to stock by using TFTP recovery or similar, but I can comfirm that writing a backup of the firmware partition with the `mtd` utility worked.
 
+## Modem
+I've gotten the modem to at least respond to uqmi commands by applying the SET_DTR quirk in the qmi_wwan driver. However I have not gotten it to connect, and commands can still just stall. The furthest I've gotten is to get it to search for a tower.
+
 ## UART shell login
 * Username: admin
 * Password: 1234

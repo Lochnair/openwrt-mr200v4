@@ -9,7 +9,7 @@
 * Modem: (?) (based on MDM9207 Soc)
 
 ## Status
-* Installation: ✕
+* Installation: ✓
 * Buttons: ✓
 * LEDs: ✓
 * Ethernet: ✓
@@ -18,12 +18,21 @@
 * LTE Modem: ✕
 
 ## Installation
-Currently the only tested method of installation is by hooking up UART and booting
-into OpenWrt using TFTP, and flashing OpenWrt by using sysupgrade.
+Easiest way of installation on OpenWrt is by using the TFTP recovery in U-Boot.
+* Set your computers IP address to 192.168.0.225
+* Copy the openwrt-ramips-mt76x8-ArcherMR200v4-squashfs-tftp-recovery.bin to your TFTP server root folder with the name `tp_recovery.bin`.
+* Hold the reset button while you power up the device (keep it pressed for approx 10 sec).
+* The device will write the image to flash and boot it.
+
+## Revert to stock
+Reverting to stock is relatively simple on this device. We must however cut out only the part we need from the stock FW image for U-Boot it to work. Luckily, unlike the MR200v1, the v4 does *not* flash the U-Boot partition with TFTP recovery. Therefore we only need to to this:
+```
+dd if='LTE_GATEWAYv3_1.6.0_0.9.1_up_boot(181022)_12.04.23.bin' of=tp_recovery.bin bs=512 skip=1 count=15616
+```
+Now follow the usual steps for TFTP recovery as described in [Installation](https://github.com/Lochnair/openwrt-mr200v4#installation).
 
 ## TFTP recovery
-Haven't tested this. U-boot attempts to load the file 'tp_recovery.bin' from 192.168.0.225.
-U-Boot runs the following commands upon reset:
+U-Boot runs the following commands when the reset button is held for 10-ish seconds upon boot:
 ```
 set serverip 192.168.0.225
 tftp 0x80060000 tp_recovery.bin
@@ -32,8 +41,6 @@ cp.b 0x80080000 0x20000 0x7a0000
 reset
 ```
 
-## Revert to stock
-I have not attempted to revert to stock by using TFTP recovery or similar, but I can comfirm that writing a backup of the firmware partition with the `mtd` utility worked.
 
 ## Modem
 I've gotten the modem to at least respond to uqmi commands by applying the SET_DTR quirk in the qmi_wwan driver. However I have not gotten it to connect, and commands can still just stall. The furthest I've gotten is to get it to search for a tower.
